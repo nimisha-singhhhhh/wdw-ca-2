@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+
+  <!-- Google Font (professional, modern) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR (common) -->
+<nav class="nav">
+  <div class="logo">PORTFOLIO</div>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO with background wallpaper -->
+<header class="hero">
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h1>Hi, I'm <span class="accent">Nimisha Singh</span></h1>
+    <p class="lead">Student • Aspiring Software Developer • Problem-solver</p>
+
+    <div class="hero-cta">
+      <a href="about.html" class="btn btn-primary">Know More</a>
+      <a href="skills.html" class="btn btn-outline">See Projects</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="num">3+</div>
+        <div class="label">Projects</div>
+      </div>
+      <div class="stat">
+        <div class="num">2</div>
+        <div class="label">Languages</div>
+      </div>
+      <div class="stat">
+        <div class="num">1</div>
+        <div class="label">Internship</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- QUICK PROJECT/SKILL PREVIEW -->
+<section class="preview">
+  <h2>Featured Work</h2>
+
+  <div class="cards">
+    <article class="card">
+      <div class="card-head">Web Project</div>
+      <p>Responsive student portfolio using HTML & CSS. Clean UI and mobile-first.</p>
+      <a href="skills.html" class="small-link">View details →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-head">C Programming</div>
+      <p>Problem solving and data structures practice using C language.</p>
+      <a href="skills.html" class="small-link">View details →</a>
+    </article>
+
+    <article class="card">
+      <div class="card-head">Mini Calculator</div>
+      <p>Small project demonstrating DOM and basic JS (can be added later).</p>
+      <a href="skills.html" class="small-link">View details →</a>
+    </article>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© <span id="year"></span> Your Name — Built with ❤️ </p>
+</footer>
+
+<script>
+  // small script to show current year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

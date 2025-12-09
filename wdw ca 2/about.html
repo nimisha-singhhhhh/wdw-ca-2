@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Your Name</title>
+
+  <!-- Same Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo">Your Name</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="about-section">
+  <div class="about-container">
+    <img src="profile.jpg.jpeg" alt="Profile photo" class="profile profile-rounded">
+
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p class="lead">A short professional intro that feels light and confident.</p>
+
+      <p>
+        Hello! I'm <strong>Nimisha singh</strong>, a student from KIET group of institutions who loves building useful
+        applications and learning core computer science concepts. I enjoy working
+        on web projects, practicing algorithms and creating clean user experiences.
+      </p>
+
+      <ul class="about-list">
+        <li><strong>Interests:</strong> Web Development, Problem Solving, UI/UX</li>
+        <li><strong>Tools:</strong> HTML • CSS • C • Git</li>
+        <li><strong>Goal:</strong> Build meaningful, simple products and keep learning</li>
+      </ul>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer small">
+  <p>© <span id="year2"></span> Nimisha</p>
+</footer>
+
+<script> document.getElementById('year2').textContent = new Date().getFullYear(); </script>
+</body>
+</html>
+
+

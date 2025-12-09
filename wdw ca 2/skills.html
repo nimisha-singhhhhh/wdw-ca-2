@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Skills & Projects — Your Name</title>
+
+  <!-- Google Font (same as other pages) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="logo">Your Name</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="skills.html" class="active">Skills</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- PAGE HEAD -->
+<section class="skills-section">
+  <div class="section-head">
+    <h2>Skills & Projects</h2>
+    <p class="lead">As a fresher I focus on building strong fundamentals and practical small projects.</p>
+  </div>
+
+  <!-- SKILLS CARDS (flexbox) -->
+  <div class="cards skills-cards">
+    <!-- Skill Card 1 -->
+    <article class="card skill-card" style="background:#fef9f3; border-color:#f5d6a1;">
+      <h3>HTML & CSS</h3>
+      <p class="small">Building responsive, accessible and clean layouts.</p>
+
+      <div class="skill-bar">
+        <div class="skill-fill" style="width:85%"></div>
+      </div>
+      <div class="skill-meta"><span>85%</span></div>
+    </article>
+
+    <!-- Skill Card 2 -->
+    <article class="card skill-card" style="background:#f3fbff; border-color:#bfe6fb;">
+      <h3>C Programming</h3>
+      <p class="small">Strong basics – logic, loops, arrays and problem solving.</p>
+
+      <div class="skill-bar">
+        <div class="skill-fill" style="width:75%"></div>
+      </div>
+      <div class="skill-meta"><span>75%</span></div>
+    </article>
+
+    <!-- Skill Card 3 -->
+    <article class="card skill-card" style="background:#f7f9f3; border-color:#cfe6b4;">
+      <h3>Problem Solving</h3>
+      <p class="small">Practice through small challenges and mini-projects.</p>
+
+      <div class="skill-bar">
+        <div class="skill-fill" style="width:70%"></div>
+      </div>
+      <div class="skill-meta"><span>70%</span></div>
+    </article>
+  </div>
+
+  <!-- PROJECTS PREVIEW -->
+  <div class="projects-preview">
+    <h3 style="margin-top:28px; text-align:left;">Highlighted Projects</h3>
+
+    <div class="cards project-cards">
+      <article class="card project-card">
+        <div class="card-head">Portfolio Website</div>
+        <p>Responsive student portfolio built using HTML and CSS. Clean UI & mobile-first approach.</p>
+        <div class="project-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+        </div>
+      </article>
+
+      <article class="card project-card">
+        <div class="card-head">C Console Tools</div>
+        <p>Small console programs: calculator, pattern printers, basic file IO demos.</p>
+        <div class="project-tags">
+          <span class="tag">C</span>
+          <span class="tag">Problem Solving</span>
+        </div>
+      </article>
+
+      <article class="card project-card">
+        <div class="card-head">Mini JS Calculator (Planned)</div>
+        <p>Simple DOM-based calculator (can be added to portfolio later).</p>
+        <div class="project-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">JS (soon)</span>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <!-- CALL TO ACTION -->
+  <div style="text-align:center; margin-top:26px;">
+    <a href="contact.html" class="btn btn-primary">Contact Me — Let's Connect</a>
+  </div>
+
+</section>
+
+<footer class="footer small">
+  <p>© <span id="year3"></span> Your Name</p>
+</footer>
+
+<script> document.getElementById('year3').textContent = new Date().getFullYear(); </script>
+</body>
+</html>

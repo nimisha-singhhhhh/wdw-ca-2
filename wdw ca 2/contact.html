@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Your Name</title>
+
+  <!-- Font (same used across site) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo">Your Name</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="contact-section">
+  <div class="section-head" style="text-align:center;">
+    <h2>Get in Touch</h2>
+    <p class="lead">Have a question or want to collaborate? Send a message — I reply as soon as I can.</p>
+  </div>
+
+  <div class="contact-grid">
+    <!-- Left: Contact Info -->
+    <div class="contact-info">
+      <div class="info-card">
+        <h3>Contact Information</h3>
+        <p>I'm open to new opportunities and collaborations. Feel free to reach out.</p>
+
+        <ul class="info-list">
+          <li><strong>Email:</strong> snimisha522@gmail.com</li>
+          <li><strong>Location:</strong> Hathras,Uttar pradesh</li>
+          <li><strong>Availability:</strong> Open to projects / learning collaborations</li>
+        </ul>
+      </div>
+
+      <div class="info-card small">
+        <h4>Quick Tips</h4>
+        <ul>
+          <li>Write a clear subject.</li>
+          <li>Mention how we can collaborate.</li>
+          <li>I usually respond within a few days.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Right: Contact Form -->
+    <div class="contact-form-wrap">
+      <form id="contactForm" class="contact-form" onsubmit="return handleSend(event)">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="name@example.com" required>
+
+        <label for="subject">Subject</label>
+        <input id="subject" name="subject" type="text" placeholder="Brief subject" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Write your message..." required></textarea>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <button type="reset" class="btn btn-outline">Reset</button>
+        </div>
+
+        <!-- Success / error message -->
+        <div id="formAlert" class="form-alert" aria-live="polite" hidden></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer small">
+  <p>© <span id="year4"></span> Your Name</p>
+</footer>
+
+<script>
+  // show current year
+  document.getElementById('year4').textContent = new Date().getFullYear();
+
+  // Simulated form handling (no backend). Shows success message and clears form.
+  function handleSend(e) {
+    e.preventDefault();
+    const alertEl = document.getElementById('formAlert');
+
+    // Basic friendly validation already ensured by 'required' attributes.
+    alertEl.hidden = false;
+    alertEl.className = 'form-alert show success';
+    alertEl.textContent = 'Thanks — your message has been noted! I will get back to you soon.';
+
+    // optional: clear form after a short delay for better UX
+    setTimeout(() => {
+      document.getElementById('contactForm').reset();
+      // hide message after 5 seconds
+      setTimeout(() => {
+        alertEl.hidden = true;
+        alertEl.className = 'form-alert';
+        alertEl.textContent = '';
+      }, 4000);
+    }, 600);
+
+    return false;
+  }
+</script>
+
+</body>
+</html>
